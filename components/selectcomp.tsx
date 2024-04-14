@@ -13,7 +13,7 @@ const SelectComp = () => {
   return (
     <Select defaultValue="0">
       <SelectTrigger className="" style={{
-        "border-width": "0px",
+        "borderWidth": "0px",
       }}>
         <SelectValue/>
       </SelectTrigger>

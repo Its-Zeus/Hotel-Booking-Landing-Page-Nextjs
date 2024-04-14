@@ -53,7 +53,7 @@ export default function Slider() {
         "--swiper-pagination-bullet-inactive-opacity": "1",
         "--swiper-pagination-bullet-horizontal-gap": "6px",
         "--swiper-pagination": {"z-index": "40"},
-      }}      
+      } as any}      
     >
         {sliderimages.map((image, index) => (
           <SwiperSlide key={index} className=''>

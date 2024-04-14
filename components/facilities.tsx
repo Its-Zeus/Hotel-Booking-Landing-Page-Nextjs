@@ -48,13 +48,13 @@ const Facilities = () => {
         <Grid rows={{initial:"repeat(3, 1fr)", sm:"repeat(2, 1fr)", lg: "repeat(2, 1fr)"}} columns={{initial: 'repeat(2, 1fr)', sm: 'repeat(3, 1fr)', md: 'repeat(3, 300px)', lg: "repeat(3, 350px)" }} gap={{initial:"20px", sm:"10px", md:"10px", lg:"30px"}} px={{initial:"20px", sm:"20px"}} width="auto">
             {images.map((item, index) => (
                     index === 0 ? 
-                    <div className='row-span-2 relative cursor-pointer hover:opacity-80'>
-                        <Image key={index} src={item.src} width={item.width} height={item.height} alt={item.alt}></Image>
+                    <div key={index} className='row-span-2 relative cursor-pointer hover:opacity-80'>
+                        <Image src={item.src} width={item.width} height={item.height} alt={item.alt}></Image>
                         <h4 className='absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-medium text-center'>{item.alt}</h4>
                     </div> 
                     : 
-                    <div className='ratio-square relative cursor-pointer hover:opacity-80'>
-                        <Image key={index} src={item.src} width={item.width} height={item.height} alt={item.alt}></Image>
+                    <div key={index} className='ratio-square relative cursor-pointer hover:opacity-80'>
+                        <Image src={item.src} width={item.width} height={item.height} alt={item.alt}></Image>
                         <h4 className='absolute bottom-5 left-1/2 -translate-x-1/2 -translate-y-1/2 text-white text-2xl font-medium text-center'>{item.alt}</h4>
                     </div>
                 ))}
