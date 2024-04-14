@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button"
 const Booking = () => {
   return (
     <div className='flex flex-col justify-center items-center'>
-        <div className='my-10 bg-[#E9F3F6] text-center inline-block w-fit px-20 py-16 rounded-3xl'>
+        <div className='my-10 bg-[#E9F3F6] text-center inline-block w-auto px-2 md:px-20 py-16 rounded-3xl'>
 
         <h1 className='text-3xl font-medium text-center mb-1'>Book a Room</h1>
         <p className='text-base text-center font-medium text-[#5E5E5E] mb-10'>Discover the perfect space for you!</p>
